@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-y"></i>
+                    <div class="logo-text">Yuki Hayashi</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+    <div class="contact-info">
+        <div class="card">
+            <i class="card-icon far fa-envelope"></i>
+            <p>yuukishayashi@gmail.com</p>
+        </div>
+        <div class="card">
+            <i class="card-icon fas fa-phone"></i>
+            <p>080-1651-8407</p>
+        </div>
+        <div class="card">
+            <i class="card-icon fas fa-map-marker-alt"></i>
+            <p>Wako City, Saitama, Japan</p>
+        </div>
+    </div>
+<!--- typed js for typing text effec-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
+<script>
+    /** creating button click show hide navbar **/
+    var togglebtn=document.querySelector(".togglebtn");
+    var nav=document.querySelector(".navlinks");
+    var links=document.querySelector(".navlinks li");
+
+    togglebtn.addEventListener("click", function(){
+        this.classList.toggle("click")
+        nav.classList.toggle("open");
+    })
+
+    var typed=new Typed(".input",{
+        strings:[" Reach Out to me"],
+        typedSpeed:45,
+        backSpeed:112,
+        loop:true
+    })
+</script>
+</body>
+</html>
